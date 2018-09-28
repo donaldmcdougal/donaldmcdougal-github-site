@@ -1,0 +1,75 @@
+<mat-card>
+  <mat-card-title>
+    Cryptography
+  </mat-card-title>
+  <mat-card-subtitle>
+    Provides cryptography utilities in Java.
+  </mat-card-subtitle>
+  <mat-card-content>
+    <p>The cryptography utilities provide cryptography functionality using the following algorithms:</p>
+    <ul>
+      <li>
+        AES
+      </li>
+      <ul>
+        <li>
+          Character arrays or strings may be used to generate secret keys.
+        </li>
+        <li>
+          Byte arrays can be encrypted and decrypted.
+        </li>
+        <li>
+          Files can be encrypted and decrypted.
+        </li>
+        <li>
+          Streams can be encrypted and decrypted.
+        </li>
+        <li>
+          It is possible to set both the initialization vector and the password salt.
+        </li>
+      </ul>
+      <li>
+        ECC (Elliptic Curve Cryptography)
+      </li>
+      <ul>
+        <li>
+          A key pair generator is used to generate random public and private keys.
+        </li>
+        <li>
+          The private key can be used to sign an array of bytes, returning the signature as an array of bytes.
+        </li>
+        <li>
+          The public key can be used to verify an array of bytes given the bytes and signature.
+        </li>
+        <li>
+          Two sets of keys can be used to come to a key agreement, allowing two parties to use a shared secret key.
+          Each party uses the other party's public key and their own private key to generate the key.  As long as the
+          two parties use each other's and their own private keys to generate the secret, the shared secret will be the
+          same, so both parties can use for encrypting and decrypting data.  This allows for communication over a secure
+          channel.
+        </li>
+      </ul>
+      <li>
+        RSA
+      </li>
+      <ul>
+        <li>
+          A key pair generator is used to generate random public and private keys.
+        </li>
+        <li>
+          The private key can be used to sign an array of bytes, returning the signature as an array of bytes.
+        </li>
+        <li>
+          The public key can be used to verify an array of bytes given the bytes and signature.
+        </li>
+        <li>
+          In RSA, you should be able to encrypt files, streams, and byte arrays using a public key and decrypt them
+          using a private key.  Generating a shared secret is not supported (yet).
+        </li>
+      </ul>
+    </ul>
+    <p>
+      <b><a mat-raised-button color="primary" href="https://github.com/donaldmcdougal/crypto" target="_blank">View the code here.</a></b>
+    </p>
+  </mat-card-content>
+</mat-card>
